@@ -37,14 +37,25 @@ $ npm install
 ## Running the app
 
 ```bash
+# start database
+docker-compose up
+```
+
+```bash
 # development
 $ npm run start
+// or
+$ yarn start
 
 # watch mode
 $ npm run start:dev
+// or
+$ yarn start:dev
 
 # production mode
 $ npm run start:prod
+// or
+$ yarn start:prod
 ```
 
 ## Test
@@ -52,13 +63,35 @@ $ npm run start:prod
 ```bash
 # unit tests
 $ npm run test
+// or
+yarn test
 
 # e2e tests
 $ npm run test:e2e
+// or
+$ yarn test:e2e
 
 # test coverage
 $ npm run test:cov
+// or
+$ yarn test:cov
 ```
+
+## API (GET/POST/PUT/DELETE)
+```
+http://localhost:3000/todo
+http://localhost:3000/todo/:id
+```
+
+## SWAGGER
+```
+http://localhost:3000/api
+```
+
+## YOUTUBE
+
+[nestjs - Mise en place d'un CRUD (fr)](https://www.youtube.com/watch?v=5GfRrrhuM_U&t=140s)
+
 
 ## Support
 
